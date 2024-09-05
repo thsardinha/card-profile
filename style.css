@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #2B2E33;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: #364D6B;
+    height: 500px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.card, .profile-img, .fab, .contact-me {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.575);
+}
+
+.profile-img {
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.about {
+    color: white;
+}
+
+.social-icons {
+    margin: 15px;
+}
+
+.fab {
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+.img {
+    border: 1px solid white;
+    width: 100px;
+    height: 100px;
+    background-image: url(imagens/profile.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.contact-me {
+    color: white;
+    background: none;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    font-weight: bolder;
+}
+
+.fab:hover, .contact-me:hover {
+    background-color: #2065C0;
+    transition: 0.5s;
+    cursor: pointer;
+}
